@@ -1,0 +1,22 @@
+.fotReact {
+  display: flex;
+  justify-content: right;
+}
+.foto1 {
+  max-width: 30px;
+  margin-left: 7px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .foto1 {
+    animation: foto1-spin infinite 20s linear;
+  }
+}
+@keyframes foto1-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
